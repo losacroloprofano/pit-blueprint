@@ -1,0 +1,10 @@
+name = "pit-blueprint"
+compatibility_date = "2024-09-22"
+
+[env.production]
+name = "pit-blueprint"
+
+[[pages_builds]]
+source = "."
+destination = "site"
+command = "mkdocs build"

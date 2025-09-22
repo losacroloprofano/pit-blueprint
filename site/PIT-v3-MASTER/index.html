@@ -1,0 +1,1443 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación interna del PIT v3">
+      
+      
+      
+        <link rel="canonical" href="https://pit-blueprint.pages.dev/PIT-v3-MASTER/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Inicio - PIT Blueprint</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pit-v3-documento-maestro" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PIT Blueprint" class="md-header__button md-logo" aria-label="PIT Blueprint" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PIT Blueprint
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inicio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PIT Blueprint" class="md-nav__button md-logo" aria-label="PIT Blueprint" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PIT Blueprint
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vision-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Visión General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Arquitectura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Arquitectura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nucleo-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Núcleo (Core)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorios-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repositorios (Plugins)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      API (Interfaz)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos (Información)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecosistema-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 Ecosistema Digital
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Ecosistema Digital">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webflow-losacroloprofanocom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webflow → losacroloprofano.com
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-githubcomlosacroloprofanopit-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub → github.com/losacroloprofano/pit-data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vercel-saberestars-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vercel → saberestars-projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudflare-pit-data-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloudflare → pit-data-v2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Flujo de Trabajo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Flujo de Trabajo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-conocimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Base de Conocimiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Base de Conocimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tzolkin-completado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tzolkin (Completado)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-repositorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Repositorios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Roadmap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fase-1-fundacion-q4-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 1: Fundación (Q4 2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-2-expansion-q1-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 2: Expansión (Q1 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-3-integracion-q2-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 3: Integración (Q2 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-4-optimizacion-q3-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 4: Optimización (Q3 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-5-escalabilidad-q4-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 5: Escalabilidad (Q4 2026)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisiones-tecnicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Decisiones Técnicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Decisiones Técnicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologías
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seguridad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-y-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Métricas y KPIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Métricas y KPIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negocio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corto-plazo-3-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corto Plazo (3 meses)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediano-plazo-6-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mediano Plazo (6 meses)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#largo-plazo-12-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Largo Plazo (12 meses)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Riesgos y Mitigaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Riesgos y Mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tecnicos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negocio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negocio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacto-y-soporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      📞 Contacto y Soporte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📞 Contacto y Soporte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Producción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vision-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Visión General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Arquitectura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Arquitectura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nucleo-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Núcleo (Core)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorios-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repositorios (Plugins)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      API (Interfaz)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos (Información)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecosistema-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 Ecosistema Digital
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Ecosistema Digital">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webflow-losacroloprofanocom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webflow → losacroloprofano.com
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-githubcomlosacroloprofanopit-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub → github.com/losacroloprofano/pit-data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vercel-saberestars-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vercel → saberestars-projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudflare-pit-data-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloudflare → pit-data-v2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Flujo de Trabajo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Flujo de Trabajo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-conocimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Base de Conocimiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Base de Conocimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tzolkin-completado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tzolkin (Completado)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-repositorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Repositorios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Roadmap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fase-1-fundacion-q4-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 1: Fundación (Q4 2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-2-expansion-q1-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 2: Expansión (Q1 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-3-integracion-q2-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 3: Integración (Q2 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-4-optimizacion-q3-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 4: Optimización (Q3 2026)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-5-escalabilidad-q4-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 5: Escalabilidad (Q4 2026)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisiones-tecnicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Decisiones Técnicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Decisiones Técnicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologías
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seguridad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-y-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Métricas y KPIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Métricas y KPIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negocio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corto-plazo-3-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corto Plazo (3 meses)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediano-plazo-6-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mediano Plazo (6 meses)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#largo-plazo-12-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Largo Plazo (12 meses)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Riesgos y Mitigaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Riesgos y Mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tecnicos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negocio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negocio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacto-y-soporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      📞 Contacto y Soporte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📞 Contacto y Soporte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Producción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pit-v3-documento-maestro">PIT v3 - Documento Maestro<a class="headerlink" href="#pit-v3-documento-maestro" title="Permanent link">&para;</a></h1>
+<h2 id="vision-general">🎯 Visión General<a class="headerlink" href="#vision-general" title="Permanent link">&para;</a></h2>
+<p><strong>PIT v3 (Plataforma de Interoperabilidad Temporal)</strong> es una plataforma modular y extensible para la interoperabilidad entre múltiples sistemas de conocimiento, no solo calendarios. Es la evolución del concepto original que expande las capacidades más allá de la temporalidad hacia un ecosistema completo de sistemas de conocimiento.</p>
+<h2 id="arquitectura">🏗️ Arquitectura<a class="headerlink" href="#arquitectura" title="Permanent link">&para;</a></h2>
+<h3 id="nucleo-core"><strong>Núcleo (Core)</strong><a class="headerlink" href="#nucleo-core" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Lógica de conversión</strong> entre sistemas</li>
+<li><strong>Algoritmos matemáticos</strong> para cálculos</li>
+<li><strong>Sistema de validación</strong> de datos</li>
+<li><strong>Registro de repositorios</strong></li>
+<li><strong>Motor de plugins</strong> extensible</li>
+</ul>
+<h3 id="repositorios-plugins"><strong>Repositorios (Plugins)</strong><a class="headerlink" href="#repositorios-plugins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>📅 Calendarios</strong> (Gregoriano, Tzolkin, 13 Lunas, Lunar, etc.)</li>
+<li><strong>⭐ Astrología</strong> (Signos, planetas, casas, aspectos)</li>
+<li><strong>🔢 Numerología</strong> (Pitagórica, Cabalística, Maya, China)</li>
+<li><strong>🃏 Tarot</strong> (78 cartas, spreads, lecturas)</li>
+<li><strong>☯️ I Ching</strong> (64 hexagramas, trigramas)</li>
+<li><strong>🎨 Colores</strong> (Cromoterapia, aura, chakras)</li>
+<li><strong>🌿 Elementos</strong> (5 elementos chinos, 4 occidentales, mayas)</li>
+<li><strong>🔮 Cristales</strong> (Propiedades, correspondencias)</li>
+<li><strong>🌙 Fases Lunares</strong> (Ciclos, influencias)</li>
+<li><strong>Otros sistemas</strong> que se agreguen</li>
+</ul>
+<h3 id="api-interfaz"><strong>API (Interfaz)</strong><a class="headerlink" href="#api-interfaz" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Endpoints REST</strong> para consumir el PIT</li>
+<li><strong>Cálculos en tiempo real</strong></li>
+<li><strong>Respuestas en JSON</strong></li>
+<li><strong>Webhooks</strong> para notificaciones</li>
+<li><strong>Rate limiting</strong> y autenticación</li>
+</ul>
+<h3 id="datos-informacion"><strong>Datos (Información)</strong><a class="headerlink" href="#datos-informacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Datos de cada repositorio</strong></li>
+<li><strong>Configuraciones</strong></li>
+<li><strong>Metadatos</strong></li>
+<li><strong>Cache inteligente</strong></li>
+</ul>
+<h2 id="ecosistema-digital">🌍 Ecosistema Digital<a class="headerlink" href="#ecosistema-digital" title="Permanent link">&para;</a></h2>
+<h3 id="webflow-losacroloprofanocom"><strong>Webflow</strong> → <a href="https://www.losacroloprofano.com/">losacroloprofano.com</a><a class="headerlink" href="#webflow-losacroloprofanocom" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Frontend/UI</strong> - Interfaz de usuario</li>
+<li><strong>Dominio principal</strong> - Presencia web</li>
+<li><strong>CMS</strong> - Gestión de contenido</li>
+</ul>
+<h3 id="github-githubcomlosacroloprofanopit-data"><strong>GitHub</strong> → <a href="https://github.com/losacroloprofano/pit-data">github.com/losacroloprofano/pit-data</a><a class="headerlink" href="#github-githubcomlosacroloprofanopit-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Desarrollo/Código</strong> - Repositorio de datos</li>
+<li><strong>GitHub Settings</strong> → <a href="https://saberestar.es/">saberestar.es</a> (dominio personalizado)</li>
+<li><strong>CI/CD</strong> - Integración continua</li>
+</ul>
+<h3 id="vercel-saberestars-projects"><strong>Vercel</strong> → <a href="https://vercel.com/saberestars-projects">saberestars-projects</a><a class="headerlink" href="#vercel-saberestars-projects" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Deploy automático</strong> - API PIT</li>
+<li><strong>Serverless</strong> - Funciones sin servidor</li>
+<li><strong>Edge Functions</strong> - Procesamiento distribuido</li>
+</ul>
+<h3 id="cloudflare-pit-data-v2"><strong>Cloudflare</strong> → <a href="https://dash.cloudflare.com/5549b784ac4a346c6d11e1d59f13ee28/pages/view/pit-data-v2">pit-data-v2</a><a class="headerlink" href="#cloudflare-pit-data-v2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>CDN + Performance</strong> - Optimización global</li>
+<li><strong>DDoS Protection</strong> - Seguridad</li>
+<li><strong>Analytics</strong> - Métricas de uso</li>
+</ul>
+<h2 id="flujo-de-trabajo">🔄 Flujo de Trabajo<a class="headerlink" href="#flujo-de-trabajo" title="Permanent link">&para;</a></h2>
+<h3 id="desarrollo"><strong>Desarrollo</strong><a class="headerlink" href="#desarrollo" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Webflow</strong> (losacroloprofano.com) → <strong>UI/UX</strong></li>
+<li><strong>GitHub</strong> (pit-data) → <strong>API PIT + Datos</strong></li>
+<li><strong>Vercel</strong> (saberestars-projects) → <strong>API Hosting</strong></li>
+<li><strong>Cloudflare</strong> (pit-data-v2) → <strong>CDN + Performance</strong></li>
+</ol>
+<h3 id="operaciones"><strong>Operaciones</strong><a class="headerlink" href="#operaciones" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Desarrollo local</strong> → <strong>GitHub</strong></li>
+<li><strong>GitHub Actions</strong> → <strong>Deploy automático</strong></li>
+<li><strong>Vercel</strong> → <strong>API en producción</strong></li>
+<li><strong>Cloudflare</strong> → <strong>Optimización global</strong></li>
+</ol>
+<h2 id="base-de-conocimiento">📚 Base de Conocimiento<a class="headerlink" href="#base-de-conocimiento" title="Permanent link">&para;</a></h2>
+<h3 id="tzolkin-completado"><strong>Tzolkin (Completado)</strong><a class="headerlink" href="#tzolkin-completado" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>🎵 13 Tonos</strong> (español + inglés + maya)</li>
+<li><strong>🔰 20 Sellos</strong> (español + inglés + maya)</li>
+<li><strong>🔢 260 Kin</strong> (información completa)</li>
+<li><strong>👥 5 Familias Terrestres</strong></li>
+<li><strong>🏰 5 Castillos</strong></li>
+<li><strong>🌊 20 Ondas Encantadas</strong></li>
+<li><strong>🌀 52 Portales Galácticos</strong></li>
+<li><strong>🌙 13 Lunas</strong></li>
+<li><strong>🕐 Día Fuera del Tiempo</strong></li>
+<li><strong>🔧 Sistemas</strong> (Dreamspell + Tradicional Maya)</li>
+</ul>
+<h3 id="proximos-repositorios"><strong>Próximos Repositorios</strong><a class="headerlink" href="#proximos-repositorios" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>⭐ Astrología</strong> (Signos, planetas, casas)</li>
+<li><strong>🔢 Numerología</strong> (Sistemas múltiples)</li>
+<li><strong>🃏 Tarot</strong> (78 cartas, spreads)</li>
+<li><strong>☯️ I Ching</strong> (64 hexagramas)</li>
+<li><strong>🎨 Colores</strong> (Cromoterapia, aura)</li>
+<li><strong>🌿 Elementos</strong> (Sistemas múltiples)</li>
+</ul>
+<h2 id="roadmap">🚀 Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h2>
+<h3 id="fase-1-fundacion-q4-2025"><strong>Fase 1: Fundación (Q4 2025)</strong><a class="headerlink" href="#fase-1-fundacion-q4-2025" title="Permanent link">&para;</a></h3>
+<ul>
+<li>✅ <strong>Base de conocimiento Tzolkin</strong> creada</li>
+<li>✅ <strong>Repositorio pit-data</strong> limpiado</li>
+<li>✅ <strong>Estructura PIT v3</strong> preparada</li>
+<li>🔄 <strong>Integración con ecosistema</strong> en progreso</li>
+</ul>
+<h3 id="fase-2-expansion-q1-2026"><strong>Fase 2: Expansión (Q1 2026)</strong><a class="headerlink" href="#fase-2-expansion-q1-2026" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Repositorio Astrología</strong> (Signos, planetas, casas)</li>
+<li><strong>Repositorio Numerología</strong> (Sistemas múltiples)</li>
+<li><strong>API unificada</strong> para todos los repositorios</li>
+<li><strong>Interfaz web</strong> mejorada</li>
+</ul>
+<h3 id="fase-3-integracion-q2-2026"><strong>Fase 3: Integración (Q2 2026)</strong><a class="headerlink" href="#fase-3-integracion-q2-2026" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Repositorio Tarot</strong> (78 cartas, spreads)</li>
+<li><strong>Repositorio I Ching</strong> (64 hexagramas)</li>
+<li><strong>Correlaciones automáticas</strong> entre sistemas</li>
+<li><strong>Análisis predictivo</strong></li>
+</ul>
+<h3 id="fase-4-optimizacion-q3-2026"><strong>Fase 4: Optimización (Q3 2026)</strong><a class="headerlink" href="#fase-4-optimizacion-q3-2026" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Repositorio Colores</strong> (Cromoterapia, aura)</li>
+<li><strong>Repositorio Elementos</strong> (Sistemas múltiples)</li>
+<li><strong>Machine Learning</strong> para patrones</li>
+<li><strong>API GraphQL</strong> para consultas complejas</li>
+</ul>
+<h3 id="fase-5-escalabilidad-q4-2026"><strong>Fase 5: Escalabilidad (Q4 2026)</strong><a class="headerlink" href="#fase-5-escalabilidad-q4-2026" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Repositorios adicionales</strong> (Cristales, Fases Lunares)</li>
+<li><strong>Marketplace de plugins</strong> de terceros</li>
+<li><strong>API pública</strong> para desarrolladores</li>
+<li><strong>Monetización</strong> y sostenibilidad</li>
+</ul>
+<h2 id="decisiones-tecnicas">🔧 Decisiones Técnicas<a class="headerlink" href="#decisiones-tecnicas" title="Permanent link">&para;</a></h2>
+<h3 id="arquitectura_1"><strong>Arquitectura</strong><a class="headerlink" href="#arquitectura_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Microservicios</strong> para escalabilidad</li>
+<li><strong>API REST</strong> para simplicidad</li>
+<li><strong>GraphQL</strong> para consultas complejas</li>
+<li><strong>Serverless</strong> para eficiencia</li>
+</ul>
+<h3 id="tecnologias"><strong>Tecnologías</strong><a class="headerlink" href="#tecnologias" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Node.js</strong> para backend</li>
+<li><strong>TypeScript</strong> para type safety</li>
+<li><strong>Express</strong> para API REST</li>
+<li><strong>Apollo</strong> para GraphQL</li>
+<li><strong>Vercel</strong> para hosting</li>
+<li><strong>Cloudflare</strong> para CDN</li>
+</ul>
+<h3 id="datos"><strong>Datos</strong><a class="headerlink" href="#datos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>JSON</strong> para simplicidad</li>
+<li><strong>PostgreSQL</strong> para datos relacionales</li>
+<li><strong>Redis</strong> para cache</li>
+<li><strong>S3</strong> para archivos estáticos</li>
+</ul>
+<h3 id="seguridad"><strong>Seguridad</strong><a class="headerlink" href="#seguridad" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>JWT</strong> para autenticación</li>
+<li><strong>Rate limiting</strong> para protección</li>
+<li><strong>CORS</strong> configurado</li>
+<li><strong>HTTPS</strong> obligatorio</li>
+</ul>
+<h2 id="metricas-y-kpis">📊 Métricas y KPIs<a class="headerlink" href="#metricas-y-kpis" title="Permanent link">&para;</a></h2>
+<h3 id="tecnicos"><strong>Técnicos</strong><a class="headerlink" href="#tecnicos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Uptime</strong> &gt; 99.9%</li>
+<li><strong>Response time</strong> &lt; 200ms</li>
+<li><strong>Error rate</strong> &lt; 0.1%</li>
+<li><strong>API calls</strong> por día</li>
+</ul>
+<h3 id="negocio"><strong>Negocio</strong><a class="headerlink" href="#negocio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Usuarios activos</strong> mensuales</li>
+<li><strong>Repositorios</strong> utilizados</li>
+<li><strong>Conversiones</strong> entre sistemas</li>
+<li><strong>Satisfacción</strong> del usuario</li>
+</ul>
+<h2 id="objetivos">🎯 Objetivos<a class="headerlink" href="#objetivos" title="Permanent link">&para;</a></h2>
+<h3 id="corto-plazo-3-meses"><strong>Corto Plazo (3 meses)</strong><a class="headerlink" href="#corto-plazo-3-meses" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>API Tzolkin</strong> completamente funcional</li>
+<li><strong>Integración</strong> con Webflow</li>
+<li><strong>Documentación</strong> completa</li>
+<li><strong>Testing</strong> automatizado</li>
+</ul>
+<h3 id="mediano-plazo-6-meses"><strong>Mediano Plazo (6 meses)</strong><a class="headerlink" href="#mediano-plazo-6-meses" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>3 repositorios</strong> adicionales</li>
+<li><strong>API unificada</strong> para todos</li>
+<li><strong>Interfaz web</strong> moderna</li>
+<li><strong>Analytics</strong> implementados</li>
+</ul>
+<h3 id="largo-plazo-12-meses"><strong>Largo Plazo (12 meses)</strong><a class="headerlink" href="#largo-plazo-12-meses" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>10+ repositorios</strong> disponibles</li>
+<li><strong>Marketplace</strong> de plugins</li>
+<li><strong>API pública</strong> para desarrolladores</li>
+<li><strong>Sostenibilidad</strong> económica</li>
+</ul>
+<h2 id="riesgos-y-mitigaciones">🚨 Riesgos y Mitigaciones<a class="headerlink" href="#riesgos-y-mitigaciones" title="Permanent link">&para;</a></h2>
+<h3 id="tecnicos_1"><strong>Técnicos</strong><a class="headerlink" href="#tecnicos_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Escalabilidad</strong>: Arquitectura serverless</li>
+<li><strong>Disponibilidad</strong>: Múltiples proveedores</li>
+<li><strong>Seguridad</strong>: Autenticación robusta</li>
+<li><strong>Performance</strong>: CDN global</li>
+</ul>
+<h3 id="negocio_1"><strong>Negocio</strong><a class="headerlink" href="#negocio_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Adopción</strong>: Documentación clara</li>
+<li><strong>Competencia</strong>: Diferenciación única</li>
+<li><strong>Sostenibilidad</strong>: Modelo de monetización</li>
+<li><strong>Calidad</strong>: Testing exhaustivo</li>
+</ul>
+<h2 id="contacto-y-soporte">📞 Contacto y Soporte<a class="headerlink" href="#contacto-y-soporte" title="Permanent link">&para;</a></h2>
+<h3 id="desarrollo_1"><strong>Desarrollo</strong><a class="headerlink" href="#desarrollo_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/losacroloprofano/pit-data">losacroloprofano/pit-data</a></li>
+<li><strong>Issues</strong>: Para reportar bugs</li>
+<li><strong>Discussions</strong>: Para preguntas</li>
+</ul>
+<h3 id="produccion"><strong>Producción</strong><a class="headerlink" href="#produccion" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Webflow</strong>: <a href="https://www.losacroloprofano.com/">losacroloprofano.com</a></li>
+<li><strong>Vercel</strong>: <a href="https://vercel.com/saberestars-projects">saberestars-projects</a></li>
+<li><strong>Cloudflare</strong>: <a href="https://dash.cloudflare.com/5549b784ac4a346c6d11e1d59f13ee28/pages/view/pit-data-v2">pit-data-v2</a></li>
+</ul>
+<hr />
+<p><strong>Última actualización</strong>: 2025-09-22
+<strong>Versión</strong>: 3.0.0
+<strong>Estado</strong>: En desarrollo activo</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "content.code.copy", "navigation.sections"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

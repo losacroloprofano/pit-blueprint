@@ -1,0 +1,12 @@
+{
+  "name": "pit-blueprint",
+  "version": "1.0.0",
+  "description": "PIT v3 Blueprint Documentation",
+  "scripts": {
+    "build": "mkdocs build",
+    "serve": "mkdocs serve"
+  },
+  "keywords": ["pit", "documentation", "mkdocs"],
+  "author": "Santiago Acosta Posada",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+site_name: PIT Blueprint
+site_description: Documentación interna del PIT v3
+site_url: https://pit-blueprint.pages.dev
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - content.code.copy
+    - navigation.sections
+nav:
+  - Inicio: PIT-v3-MASTER.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+extra:
+  generator: false
