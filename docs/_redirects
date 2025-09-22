@@ -1,0 +1,12 @@
+# Redirige cualquier ruta bajo /docs/ al mismo path sin el prefijo
+# /docs/PIT-v3-MASTER.md  -> /PIT-v3-MASTER.md
+# /docs/index.md          -> /index.md (ver regla siguiente)
+# Orden importa: primero casos específicos
+/docs/index.md      /                  301
+/docs/*             /:splat            301
+
+# Convierte URLs .md en su versión "directorio" (MkDocs use_directory_urls)
+# /PIT-v3-MASTER.md -> /PIT-v3-MASTER/
+# /index.md         -> /
+/index.md           /                  301
+/*.md               /:splat/           301
