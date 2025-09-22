@@ -1,0 +1,3 @@
+# A futuro puedes poner patrones de exclusión:
+# exclude = ["^mailto:", "^tel:"]
+# verbose = true
