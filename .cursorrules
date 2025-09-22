@@ -1,0 +1,32 @@
+# CURSOR RULES — PIT v3
+
+# Idioma y estilo
+- Responder en español, claro y conciso.
+- Una sola acción por vez; después de ejecutar, pedir verificación.
+
+# Flujo de trabajo
+- Siempre crear branch: feat/*, docs/*, chore/*.
+- PRs pequeños y atómicos. Usar template del repo.
+- Antes de proponer deploy: correr `mkdocs build --strict` local.
+
+# Calidad automática
+- No aceptar merges si el CI (docs-ci) falla.
+- Si MkDocs marca warning en --strict, tratar como error.
+- Verificar enlaces internos con lychee (offline).
+
+# Commits
+- Convención: tipo(scope): descripción
+  - tipos: docs | ci | chore | fix | feat | refactor
+  - ejemplo: docs(blueprint): agrega portada index.md
+
+# Cloudflare Pages
+- Si cambia mkdocs.yml o docs/, crear commit vacío para forzar redeploy:
+  `git commit --allow-empty -m "chore: trigger redeploy"`
+
+# Seguridad y secretos
+- Nunca subir tokens/secretos. Usar variables en Cloudflare.
+- No ejecutar servidores que bloqueen la terminal sin avisar.
+
+# Escalabilidad
+- Si se agregan nuevas páginas, actualizar nav y ejecutar link checker.
+- Mantener Documento Maestro como fuente de verdad; el resto enlaza desde index.
