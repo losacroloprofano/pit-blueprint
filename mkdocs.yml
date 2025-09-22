@@ -8,8 +8,8 @@ theme:
     - content.code.copy
     - navigation.sections
 nav:
-  - Inicio: docs/index.md
-  - Documento Maestro: docs/PIT-v3-MASTER.md
+  - Inicio: index.md
+  - Documento Maestro: PIT-v3-MASTER.md
 markdown_extensions:
   - admonition
   - toc:
@@ -17,7 +17,5 @@ markdown_extensions:
   - tables
 extra:
   generator: false
-
 extra_css:
   - assets/css/tokens.css
-
