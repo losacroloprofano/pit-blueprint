@@ -8,7 +8,8 @@ theme:
     - content.code.copy
     - navigation.sections
 nav:
-  - Inicio: PIT-v3-MASTER.md
+  - Inicio: docs/index.md
+  - Documento Maestro: docs/PIT-v3-MASTER.md
 markdown_extensions:
   - admonition
   - toc:
