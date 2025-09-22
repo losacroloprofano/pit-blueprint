@@ -10,6 +10,7 @@ theme:
 nav:
   - Inicio: index.md
   - Documento Maestro: PIT-v3-MASTER.md
+  - Prueba de Tokens: design-tokens-test.md
 markdown_extensions:
   - admonition
   - toc:
